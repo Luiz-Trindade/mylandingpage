@@ -1,6 +1,6 @@
 <script setup lang="ts">
 // Define props for the component
-const props = defineProps({
+defineProps({
     title: {
         type: String,
         default: 'Default Title',
@@ -13,14 +13,6 @@ const props = defineProps({
         type: String,
         default: 'This is a default description for the AppHero component.',
     }
-});
-
-// SEO Meta Tags
-useSeoMeta({
-    title: props.title,
-    ogTitle: props.title,
-    description: props.description,
-    ogDescription: props.description,
 });
 </script>
 

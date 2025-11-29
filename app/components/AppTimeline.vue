@@ -1,13 +1,11 @@
 <script lang="ts" setup>
-import { computed } from 'vue';
-
 interface TimelineItem {
     opposite: string;
     title: string;
     description: string;
 }
 
-const props: { timelineItems: TimelineItem[] } = defineProps({
+defineProps({
     timelineItems: {
         type: Array as PropType<TimelineItem[]>,
         default: () => [
@@ -28,23 +26,6 @@ const props: { timelineItems: TimelineItem[] } = defineProps({
             },
         ],
     },
-});
-
-// Computed properties for SEO meta tags
-const seoTitle = computed(() => {
-    return props.timelineItems.map(item => item.title).join(' | ');
-});
-
-const seoDescription = computed(() => {
-    return props.timelineItems.map(item => item.description).join(' ');
-});
-
-// SEO Meta Tags
-useSeoMeta({
-    title: seoTitle,
-    ogTitle: seoTitle,
-    description: seoDescription,
-    ogDescription: seoDescription,
 });
 </script>
 

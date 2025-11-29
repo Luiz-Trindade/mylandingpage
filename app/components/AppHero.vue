@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 // Define component props with default values
-const props = defineProps({
+defineProps({
     title: {
         type: String,
         default: 'Default Title',
@@ -21,14 +21,6 @@ const props = defineProps({
         type: String,
         default: 'https://cdn.vuetifyjs.com/images/cards/sunshine.jpg',
     },
-});
-
-// SEO Meta Tags
-useSeoMeta({
-    title: props.title,
-    ogTitle: props.title,
-    description: props.description,
-    ogDescription: props.description,
 });
 </script>
 

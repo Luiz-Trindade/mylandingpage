@@ -34,6 +34,13 @@ const AppTimelineProps = ref({
     },
   ],
 });
+
+useSeoMeta({
+  title: 'Luiz Trindade - Desenvolvedor de software',
+  ogTitle: 'Luiz Trindade - Desenvolvedor de software',
+  description: 'Olá! Sou Luiz Trindade, um desenvolvedor de software apaixonado por criar soluções digitais inovadoras. Com experiência em diversas tecnologias, estou sempre em busca de novos desafios para transformar ideias em realidade. Meu objetivo é entregar produtos de alta qualidade que atendam às necessidades dos clientes, utilizando as melhores práticas de desenvolvimento e mantendo-me atualizado com as tendências do mercado.',
+  ogDescription: 'Olá! Sou Luiz Trindade, um desenvolvedor de software apaixonado por criar soluções digitais inovadoras. Com experiência em diversas tecnologias, estou sempre em busca de novos desafios para transformar ideias em realidade. Meu objetivo é entregar produtos de alta qualidade que atendam às necessidades dos clientes, utilizando as melhores práticas de desenvolvimento e mantendo-me atualizado com as tendências do mercado.',
+});
 </script>
 
 <template>
