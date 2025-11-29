@@ -10,14 +10,6 @@ const AppHeroProps = ref({
   image: ProfilePicture,
 });
 
-// const AppPortifolioProps = ref({
-//   title: 'Our Portfolio',
-//   subtitle: 'Showcasing Our Best Work',
-//   description: 'Explore a curated selection of our most impactful projects that demonstrate our commitment to excellence, innovation, and client satisfaction.',
-//   backgroundImage: 'https://cdn.vuetifyjs.com/docs/images/cards/dark-beach.jpg',
-//   image: 'https://cdn.vuetifyjs.com/images/cards/sunshine.jpg',
-// });
-
 const AppTimelineProps = ref({
   timelineItems: [
     {
@@ -39,17 +31,26 @@ const AppTimelineProps = ref({
 });
 
 useSeoMeta({
-  title: 'Luiz Trindade - Desenvolvedor de software',
-  ogTitle: 'Luiz Trindade - Desenvolvedor de software',
-  description: 'Olá! Sou Luiz Trindade, um desenvolvedor de software apaixonado por criar soluções digitais inovadoras. Com experiência em diversas tecnologias, estou sempre em busca de novos desafios para transformar ideias em realidade. Meu objetivo é entregar produtos de alta qualidade que atendam às necessidades dos clientes, utilizando as melhores práticas de desenvolvimento e mantendo-me atualizado com as tendências do mercado.',
-  ogDescription: 'Olá! Sou Luiz Trindade, um desenvolvedor de software apaixonado por criar soluções digitais inovadoras. Com experiência em diversas tecnologias, estou sempre em busca de novos desafios para transformar ideias em realidade. Meu objetivo é entregar produtos de alta qualidade que atendam às necessidades dos clientes, utilizando as melhores práticas de desenvolvimento e mantendo-me atualizado com as tendências do mercado.',
+  title: 'Luiz Trindade | Desenvolvedor Fullstack - Belém, PA',
+  description: 'Desenvolvedor de Software Fullstack em Belém do Pará. Especialista em Vue.js, Nuxt e soluções Node.js. Foco em inovação, alta performance e desenvolvimento ágil.',
+  keywords: 'Luiz Trindade, Desenvolvedor Fullstack, Full-Stack, Software Developer, Vue.js, Nuxt.js, Node.js, JavaScript, TypeScript, Belém do Pará, Pará, Brasil, Dev Web, Frontend, Backend, UI/UX, API REST, Banco de Dados, SQL, NoSQL, Soluções Digitais, Desenvolvimento Ágil, Portfólio, Contratação, Freela',
+  robots: 'index, follow',
+  author: 'Luiz Trindade',
+  ogTitle: 'Luiz Trindade - Desenvolvedor Fullstack (Vue, Nuxt, Node)',
+  ogDescription: 'Portfólio de Luiz Trindade, Fullstack Developer em Belém/PA. Veja projetos com Vue.js, Nuxt.js e Node.js.',
+  ogUrl: 'https://luiz-trindade-dev.netlify.app/',
+  ogType: 'website',
+  // ogImage: 'https://luiz-trindade-dev.netlify.app/profile_picture.png',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Luiz Trindade - Fullstack Expert',
+  twitterDescription: 'Dev Fullstack em Belém do Pará. Contrate para projetos com foco em performance e qualidade de código.',
+  // twitterImage: 'https://luiz-trindade-dev.netlify.app/profile_picture.png',
 });
 </script>
 
 <template>
   <div>
     <AppHero v-bind="AppHeroProps" />
-    <!-- <AppPortifolio v-bind="AppPortifolioProps" /> -->
     <AppTimeline v-bind="AppTimelineProps" />
     <AppContact />
   </div>
