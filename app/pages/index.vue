@@ -1,10 +1,13 @@
 <script lang="ts" setup>
+import ProfilePicture from '@/assets/profile_picture.png';
+import BackGroundImage from '@/assets/background_image.jpg';
+
 const AppHeroProps = ref({
   title: 'Luiz Trindade - Desenvolvedor de software',
   subtitle: 'Transformando ideias em soluções digitais',
   description: 'Olá! Sou Luiz Trindade, um desenvolvedor de software apaixonado por criar soluções digitais inovadoras. Com experiência em diversas tecnologias, estou sempre em busca de novos desafios para transformar ideias em realidade. Meu objetivo é entregar produtos de alta qualidade que atendam às necessidades dos clientes, utilizando as melhores práticas de desenvolvimento e mantendo-me atualizado com as tendências do mercado.',
-  backgroundImage: 'https://wallpaperaccess.com/full/314785.jpg',
-  image: 'https://luiz-trindade-dev.netlify.app/assets/profile_picture-D4iy5gfz.png',
+  backgroundImage: BackGroundImage,
+  image: ProfilePicture,
 });
 
 // const AppPortifolioProps = ref({
